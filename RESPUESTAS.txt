@@ -1,0 +1,50 @@
+1.- C
+
+2.- A
+
+3.- C
+
+4.- B
+
+5.- A
+
+6.- A
+
+7.- D
+
+8.- A
+
+9.- final String result = createEmployeeList()
+                .stream()
+                .map(Employee::getName)
+                .collect(Collectors.joining(","));
+
+    System.out.println(result);
+
+10.- class Test {
+
+        public int[] algorithm(int[] nums) {
+            
+            int length = nums.length;
+            Stack<Integer> stack = new Stack<>();
+            
+            int[] result = new int[length];
+            Arrays.fill(result, -1);
+            
+            for (int i = 0; i < length; i++) {
+                while (!s.isEmpty() && arr[s.peek()] < arr[i]) {
+                    result[s.pop()] = arr[i];
+                }
+                stack.push(i);
+            }
+            
+            return result;
+        }
+
+    }
+
+    a) La estructura de datos usada ha sido la Pila, en este caso para poder optimizar la complejidad, mediante 
+       dicha estructura almacenamos los valores e indice a medida que vamos recorriendo el array para asi poder 
+       comprobar y definir que valor, si existe, es mayor que el que se esta procesando.
+
+    b) La complejidad del algoritmo es O(n)

@@ -1,1 +1,0 @@
-# inditex_test
